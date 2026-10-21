@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts (optional: site still works without internet, using fallback fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Brightbyte | Software and Training</title>
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION (same on every page) ============ -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Bright<span>byte</span></a>
+
+      <!-- Menu button: only visible on mobile (controlled by CSS + js/script.js) -->
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+
+      <!-- Links: the href must match the file name so the active page is highlighted -->
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="courses.html">Courses</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <!-- Left side: headline and buttons -->
+      <div>
+        <h1>We build software and teach people to build it too.</h1>
+        <p>Brightbyte designs websites, apps and cloud systems for businesses, and runs practical courses for people starting a tech career.</p>
+        <a href="services.html" class="btn">See our services</a>
+        <a href="courses.html" class="btn btn-outline">Browse courses</a>
+      </div>
+
+      <!-- Right side: decorative code window (HTML + CSS only, no image needed) -->
+      <div class="code-window" aria-hidden="true">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div><span class="k">const</span> team = <span class="s">"Brightbyte"</span>;</div>
+        <div><span class="k">function</span> build(idea) {</div>
+        <div>&nbsp;&nbsp;<span class="k">return</span> idea + <span class="s">" shipped"</span>;</div>
+        <div>}</div>
+        <div>build(<span class="s">"your project"</span>);</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SERVICES PREVIEW ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>What we do</h2>
+      <p class="intro">Three ways we can help. See the Services page for the full list.</p>
+
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Fast, mobile-friendly websites and web apps built around your customers.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <h3>Mobile Apps</h3>
+          <p>Android and iOS apps, from first prototype to store release.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <h3>Cloud and Support</h3>
+          <p>Hosting, backups and monitoring so your systems stay online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COURSES PREVIEW ============ -->
+  <section class="section">
+    <div class="container">
+      <h2>Learn with us</h2>
+      <p class="intro">Short, hands-on courses taught by working developers.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <span class="tag">Beginner</span>
+          <h3>HTML, CSS and JavaScript</h3>
+          <p>Build and publish your first website in 6 weeks.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Beginner</span>
+          <h3>Python Basics</h3>
+          <p>Learn to write scripts that automate everyday tasks.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Intermediate</span>
+          <h3>Cybersecurity Essentials</h3>
+          <p>Understand common attacks and how to protect a system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALL TO ACTION ============ -->
+  <section class="cta">
+    <div class="container">
+      <h2>Have a project or a question?</h2>
+      <a href="contact.html" class="btn">Contact us</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (same on every page) ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Brightbyte</h3>
+          <p>Software and training<br>for growing businesses.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+        </div>
+        <div>
+          <h3>Learn</h3>
+          <a href="courses.html">Courses</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <!-- The year is filled in automatically by js/script.js -->
+      <p class="copyright">&copy; <span id="year">2026</span> Brightbyte. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript file (placed at the end so the page loads first) -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

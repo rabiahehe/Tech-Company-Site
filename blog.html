@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts (optional: site still works without internet, using fallback fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Blog | Brightbyte</title>
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION (same on every page) ============ -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Bright<span>byte</span></a>
+
+      <!-- Menu button: only visible on mobile (controlled by CSS + js/script.js) -->
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+
+      <!-- Links: the href must match the file name so the active page is highlighted -->
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="courses.html">Courses</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-title">
+    <div class="container">
+      <h1>Blog</h1>
+      <p>Tips, guides and news from our team.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- ============ SEARCH BOX (works with js/script.js) ============ -->
+      <input type="text" id="blogSearch" class="search-box" placeholder="Search posts..." aria-label="Search blog posts">
+
+      <!-- ============ BLOG POSTS ============ -->
+      <!-- To add a post: copy one card with class "blog-post" and edit the text -->
+      <div class="card-grid">
+
+        <div class="card blog-post">
+          <p class="post-date">10 October 2026</p>
+          <h3>5 habits of a good beginner programmer</h3>
+          <p>Read error messages, build small things, and ask for help early.</p>
+        </div>
+
+        <div class="card blog-post">
+          <p class="post-date">28 September 2026</p>
+          <h3>How to spot a phishing email</h3>
+          <p>Check the sender, hover over links, and never rush to click.</p>
+        </div>
+
+        <div class="card blog-post">
+          <p class="post-date">15 September 2026</p>
+          <h3>Why your website feels slow</h3>
+          <p>Large images and too many scripts are the usual causes. Here is how to fix them.</p>
+        </div>
+
+        <div class="card blog-post">
+          <p class="post-date">2 September 2026</p>
+          <h3>Cloud hosting explained simply</h3>
+          <p>What "the cloud" really means and when a small business needs it.</p>
+        </div>
+
+      </div>
+
+      <!-- Shown by JS when the search finds nothing -->
+      <p id="noResults" class="no-results hidden">No posts match your search. Try a different word.</p>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (same on every page) ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Brightbyte</h3>
+          <p>Software and training<br>for growing businesses.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+        </div>
+        <div>
+          <h3>Learn</h3>
+          <a href="courses.html">Courses</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <!-- The year is filled in automatically by js/script.js -->
+      <p class="copyright">&copy; <span id="year">2026</span> Brightbyte. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript file (placed at the end so the page loads first) -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

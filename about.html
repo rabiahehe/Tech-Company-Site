@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts (optional: site still works without internet, using fallback fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>About | Brightbyte</title>
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION (same on every page) ============ -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Bright<span>byte</span></a>
+
+      <!-- Menu button: only visible on mobile (controlled by CSS + js/script.js) -->
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+
+      <!-- Links: the href must match the file name so the active page is highlighted -->
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="courses.html">Courses</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ PAGE TITLE ============ -->
+  <section class="page-title">
+    <div class="container">
+      <h1>About Brightbyte</h1>
+      <p>A small team that likes clear code and clear explanations.</p>
+    </div>
+  </section>
+
+  <!-- ============ OUR STORY ============ -->
+  <section class="section">
+    <div class="container about-grid">
+      <div>
+        <h2>Our story</h2>
+        <p>Brightbyte started in 2018 with two developers helping local shops get online. Clients kept asking us to teach their staff, so we began running training sessions.</p>
+        <p>Today we do both: we build software for businesses, and we teach courses for people entering the tech industry.</p>
+      </div>
+      <div>
+        <h2>What we believe</h2>
+        <p><strong>Keep it simple.</strong> The best solution is the one your team can understand and maintain.</p>
+        <p><strong>Teach as we work.</strong> Every project ends with documentation your team can use.</p>
+        <p><strong>Be honest about time and cost.</strong> No surprises on the invoice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Our team</h2>
+      <p class="intro">Replace these names with your real team members.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="team-photo">A</div>
+          <h3>Aisha Khan</h3>
+          <p>Founder and Lead Developer</p>
+        </div>
+        <div class="card">
+          <div class="team-photo">R</div>
+          <h3>Rahul Verma</h3>
+          <p>Cloud Engineer</p>
+        </div>
+        <div class="card">
+          <div class="team-photo">M</div>
+          <h3>Maria Lopez</h3>
+          <p>Course Instructor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (same on every page) ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Brightbyte</h3>
+          <p>Software and training<br>for growing businesses.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+        </div>
+        <div>
+          <h3>Learn</h3>
+          <a href="courses.html">Courses</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <!-- The year is filled in automatically by js/script.js -->
+      <p class="copyright">&copy; <span id="year">2026</span> Brightbyte. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript file (placed at the end so the page loads first) -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
